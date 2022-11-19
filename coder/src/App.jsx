@@ -1,17 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
-import Saludo from './compon/Saludo';
+import NavBar from './compon/NavBar';
+import ItemListContainer from './compon/ItemListContainer';
 
 function App() {
-  const nombre = Saludo
+
   return (
     <>
-    <div className="App">
-      
-      <Saludo name='gabriel' age='26'/>
-    </div>
+      <div className="App">
+        <NavBar />
+        <ItemListContainer greeting='Hola mundo' />
+      </div>
     </>
-    
+
   );
 }
 
